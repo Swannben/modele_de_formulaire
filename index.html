@@ -1,0 +1,46 @@
+<html> 
+<head>
+    <title> Exercice</title>
+    
+    <script src="script.js"> </script>
+</head>
+<body >
+    <form action="/ma-page-de-traitement" method="post">
+        <div>
+            <label for="nom">nom</label>
+                <input type="text" name="nom" id="nom" size="50" maxlength="50">
+        </div>
+        <div>
+            <label for="prenom">prenom</label>
+                <input type="text" name="prenom" id="prenom" size="50" maxlength="50">
+        </div>
+        <div>
+            <label for="identifiant">identifiant</label>
+                <input type="text" name="identifiant" id="identifiant" size="50" maxlength="50">
+                <span  id ="idverif"></span>
+        </div>
+        <div>
+            <label for="motdepasse">Mot de passe :</label>
+                <input type="password" id="motdepasse" name="motdepasse" size="50" maxlength="50">
+                <span  id ="mdp"> sécurité 0% (doit être 100%)</span>
+        </div>
+        <div>
+            <label for="mdpverif"> verification du mot de passe</label>
+                <input type="password" id="mdpverif" name="mdpverif" size="50" maxlength="50">
+            <span id="doublemdp"></span>
+        </div>
+        <div>
+            <label for="age">age >18</label>
+                <input type="number" name="age" id="age">
+            <span  id ="ageverif"></span>
+        </div>
+        <div>
+            <label for="CGU">CGU</label>
+                <input type="checkbox" name="CGU" id="CGU">
+        </div>
+        <div>
+            <button id="button" disabled>envoyer le formulaire </button>
+        </div>
+    </form>
+</body>
+</html>
